@@ -10,7 +10,4 @@ you NEED Chrome/Chromium
 4. select this repo locally
 5. enable it if not enabled already
 
-![openingimg.png](./images/openingimg.png)
-<video width="640" height="360" controls>
-  <source src="./images/openingvideo.mov" type="video/mp4">
-</video>
+[![video of opening](./images/openingimg.png)](./images/openingvideo.mov)
