@@ -10,4 +10,4 @@ you NEED Chrome/Chromium
 4. select this repo locally
 5. enable it if not enabled already
 
-[![video of opening](./images/openingimg.png)](./images/openingvideo.mov)
+[![video of opening](./images/openingimg.png)](https://youtu.be/kDPF1b9m8zM)
