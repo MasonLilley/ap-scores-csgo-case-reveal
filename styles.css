@@ -1,0 +1,87 @@
+div.apscores-card:has(.apscores-badge-score):not([data-csgo="true"]) div.apscores-card-body,
+div.apscores-card-body.ap-score-hidden {
+  display: none !important;
+}
+
+.csgo-inline-placeholder {
+  width: 100%;
+  flex: 1;
+  min-height: 160px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #000;
+  transition: background-color 0.3s;
+  user-select: none;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.csgo-inline-placeholder:hover {
+  background-color: #f9f9f9;
+}
+
+.csgo-fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 9998;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.csgo-reveal-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.csgo-selection-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 6px;
+  background-color: #fff;
+  z-index: 10;
+  transform: translateX(-50%);
+}
+
+.csgo-track {
+  display: flex;
+  height: 100%;
+  width: max-content;
+  align-items: center;
+  transition: transform cubic-bezier(0.135, 0.755, 0.425, 0.970) 7s; 
+}
+
+.csgo-item {
+  width: 250px;
+  height: 250px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 100px;
+  color: #fff;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+
+.score-5 { background: rgba(255, 215, 0, 0.5); }
+.score-4 { background: #eb4b4b80; }
+.score-3 { background: #d32ce680; }
+.score-2 { background: #4b69cd80; }
+.score-1 { background: #afafaf80; }

@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "AP CSGO Score Reveal",
+  "version": "1.0",
+  "description": "hides and reveals ap scores with csgo case animation",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://apstudents.collegeboard.org/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://apstudents.collegeboard.org/*"],
+      "css": ["styles.css"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["sounds/start.mp3", "sounds/goldEnd.mp3", "sounds/blueEnd.mp3"],
+      "matches": ["*://apstudents.collegeboard.org/*"]
+    }
+  ],
+  "action": {
+    "default_title": "AP CS:GO Reveal"
+  }
+}
